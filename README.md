@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/CasperTheChild/FM_profile)
+- Live Site URL: [Live site URL](https://casperthechild.github.io/FM_profile/)
 
 ## My process
 
