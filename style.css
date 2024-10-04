@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+    --Weight-1: 400;
+    --Weight-2: 600;
+    --Weight-3: 700;
+}
+
+html {
+    font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+  margin: 0 0 0 0;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Grey-900);
+}
+
+body .card {
+    width: 25vw;
+    min-height: 100px;
+    padding-bottom: 1rem;
+    background-color: var(--Grey-800);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    align-items: center;
+}
+
+img {
+    width: 5rem;
+    border-radius: 50%;
+    margin: 3rem 0 2rem 0;
+}
+
+h1 {
+    color: var(--White);
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    color: var(--Green);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem; 
+}
+
+.bio {
+    color: var(--White);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+body .links{
+    width: calc(25vw - 6rem);
+    margin-top: 0.5rem;
+}
+
+.buttons {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--White);
+    font-weight: normal;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: var(--Grey-700);
+    border-radius: 0.5rem;
+
+    transition-property: color;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+}
+
+.buttons:hover {
+    color: var(--Gray-800);
+    background-color: var(--Green);
+}
+
+.attribution { 
+    margin-top: 0.5rem;
+    font-size: 11px; text-align: center;
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 440px){
+    body .card {
+      width: 85vw;
+    }
+
+    img {
+        width: 6rem;
+        margin: 2rem 0 2rem 0;
+    }
+
+    body .links {
+        width: calc(85vw - 4rem);
+    }
+}
+
+@media (min-width: 440px) and (max-width: 650px){
+    body .card {
+      width: 65vw;
+    }
+
+    img {
+        width: 6rem;
+        margin: 2.2rem 0 2rem 0;
+    }
+
+    body .links {
+        width: calc(65vw - 4.4rem);
+    }
+}
+
+@media (min-width: 650px) and (max-width: 900px){
+    body .card {
+      width: 50vw;
+    }
+
+    img {
+        width: 6rem;
+        margin: 2.5rem 0 2rem 0;
+    }
+
+    body .links {
+        width: calc(50vw - 5rem);
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    body .card {
+      width: 35vw;
+    }
+
+    img {
+        width: 6rem;
+        margin: 2.7rem 0 2rem 0;
+    }
+
+    body .links {
+        width: calc(35vw - 5.4rem);
+    }
+}
